@@ -41,6 +41,7 @@ str2 = "1005"
 var1 = 20
 var2 = 50
 output = (((var1+var2)*50)/100.0)*var1/var2
+
 # fonksiyon parametresi = input
 def benim_ilk_func(a,b):
     
@@ -73,7 +74,7 @@ def cember_cevresi_hesapla(r,pi=3.14):
     output = 2*pi*r
     return output
 
-# flexible
+# flexible # args isteğe bağlı ekleme sağlar
     
 def hesapla(boy,kilo,*args):
     print(args)
@@ -84,7 +85,6 @@ def hesapla(boy,kilo,*args):
 #    output = (boy+kilo)*yas
 #    return output
     
-
 # %% QUIZ
     
 # int variable yas
@@ -123,34 +123,4 @@ sonuc = hesapla(3)
 sonuc2 = lambda x: x*x
 print(sonuc2(3))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#%%
