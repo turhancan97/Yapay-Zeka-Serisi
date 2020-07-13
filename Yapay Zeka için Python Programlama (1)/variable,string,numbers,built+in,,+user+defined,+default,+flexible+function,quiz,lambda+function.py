@@ -93,7 +93,6 @@ def hesapla(boy,kilo,*args):
 # fonksiyon print(type(),len,float()) 
 # *args soyisim
 # default parametre ayakkabi numarasi
-    
 yas = 10
 name = "ali"
 soyisim = "veli"
@@ -101,16 +100,12 @@ soyisim = "veli"
 def function_quiz(yas,name,*args,ayakkabi_numarasi=35):
     print("Cocugun ismi: ",name, " yasi: ",yas," ayak numarasi: ",ayakkabi_numarasi)
     print(type(name))
-    print(float(yas))
-    
-    output = args[0]*yas
-    
+    print(float(yas))    
+    output = args[0]*yas    
     return output
 
 sonuc = function_quiz(yas,name,soyisim)
-
 print("args[0]*yas: ",sonuc)
-
 
 # %% 
 # lambda function
@@ -118,9 +113,5 @@ print("args[0]*yas: ",sonuc)
 def hesapla(x):
     return x*x
 sonuc = hesapla(3)
-
-
 sonuc2 = lambda x: x*x
 print(sonuc2(3))
-
-#%%
