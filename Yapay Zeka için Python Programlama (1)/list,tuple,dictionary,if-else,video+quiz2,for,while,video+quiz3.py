@@ -1,46 +1,27 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jun 11 16:46:00 2018
-
-@author: user
-"""
-
-# %%
 # list
-
 liste = [1,2,3,4,5,6]
 type(liste)
-
 liste_str = ["ptesi","sali","cars"]
 type(liste_str)
-
 value = liste[1]
 print(value)
-
 last_value = liste[-1]
-
 liste_divide = liste[0:3]
-
 liste.append(7)
 liste.remove(7)
 liste.reverse()
 liste2 = [1,5,4,3,6,7,2]
 liste2.sort()
-
 string_int_liste = [1,2,3,"aa","bb"]
 
 # %% tuple
-
 t = (1,2,3,3,4,5,6)
-
 t.count(3)
 t.index(3)
 
 # %% dictionary
 
 dictionary = {"ali":32,"veli":45,"ayse":13}
-
-
 # ali ,veli ,ayse = keys
 # 32,45,13 = values
 
@@ -82,17 +63,13 @@ else:
 
 
 # %% 
-
 # 1640. yil == 17. yuzyil
 # 109. yil == 2. yuzyil
-# 2000. yil = 20. yuzyil
-    
+# 2000. yil = 20. yuzyil    
 # metod yazin.
     # input integer yillar
     # output integer yuzyil
-
-# input = year  >> 1 <= year <= 2005
-    
+# input = year  >> 1 <= year <= 2005    
 def year2Century(year):
     """
     year to century
@@ -125,21 +102,17 @@ for each in "ankara ist".split():
     print(each)
     
 liste = [1,4,5,6,8,3,3,4,67]
- 
 summation = sum(liste)    
-
 count = 0
 for each in liste:
     count = count + each
     print(count)
-    
-# while loop
-    
+   
+# while loop   
 i = 0
 while(i <4):
     print(i)
     i = i + 1
-
 
 sinir = len(liste)   
 each = 0
@@ -147,16 +120,12 @@ count = 0
 while(each < sinir):
     count = count + liste[each]
     each = each + 1 
-
  
 # %%
-
-
 # liste verecegim
 #sizden bu listenin icindeki en kucuk sayiyi bulmanizi istiyorum
 
 liste = [1,2,3,4,5,6,4,23,67,21,-500,23,451,67]
-
 mini = 100000
 for each in liste:
     if(each < mini):
@@ -164,14 +133,3 @@ for each in liste:
     else:
         continue
 print(mini)
-
-
-
-
-
-
-
-
-
-
-
