@@ -1,4 +1,4 @@
 ### Basic Calculator Project
-#### It was designed very basic calculator which can sum, multiply, and divide in this code by using classes and methods.
+#### It was designed a very basic calculator that can sum, multiply, and divide by using classes and methods in this code.
 
 
