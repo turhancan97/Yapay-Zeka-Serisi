@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jul 15 16:32:11 2018
-
-@author: user
-"""
-
 import pandas as pd
 import numpy as np
 #%%  import data
@@ -37,7 +30,7 @@ y_true = y_test
 #%% confusion matrix
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_true,y_pred)
-
+print(cm)
 
 # %% cm visualization
 import seaborn as sns
@@ -48,20 +41,3 @@ sns.heatmap(cm,annot = True,linewidths=0.5,linecolor="red",fmt = ".0f",ax=ax)
 plt.xlabel("y_pred")
 plt.ylabel("y_true")
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

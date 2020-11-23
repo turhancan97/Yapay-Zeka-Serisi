@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jul 22 01:50:15 2018
-
-@author: user
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -30,9 +23,9 @@ dictionary = {"x":x,"y":y}
 
 data = pd.DataFrame(dictionary)
 
-plt.scatter(x1,y1)
-plt.scatter(x2,y2)
-plt.scatter(x3,y3)
+plt.scatter(x1,y1,color="black")
+plt.scatter(x2,y2,color="black")
+plt.scatter(x3,y3,color="black")
 plt.show()
 
 
@@ -57,18 +50,3 @@ plt.scatter(data.x[data.label == 0 ],data.y[data.label == 0],color = "red")
 plt.scatter(data.x[data.label == 1 ],data.y[data.label == 1],color = "green")
 plt.scatter(data.x[data.label == 2 ],data.y[data.label == 2],color = "blue")
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

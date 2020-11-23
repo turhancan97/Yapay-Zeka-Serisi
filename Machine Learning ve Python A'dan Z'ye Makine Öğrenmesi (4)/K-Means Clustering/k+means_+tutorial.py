@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jul 21 22:07:59 2018
-
-@author: user
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -30,16 +23,12 @@ dictionary = {"x":x,"y":y}
 
 data = pd.DataFrame(dictionary)
 
-plt.scatter(x1,y1)
-plt.scatter(x2,y2)
-plt.scatter(x3,y3)
-plt.show()
 
-## %% kmeans algoritması bunu gorecek
-#plt.scatter(x1,y1,color = "black")
-#plt.scatter(x2,y2,color = "black")
-#plt.scatter(x3,y3,color = "black")
-#plt.show()
+# %% kmeans algoritması bunu gorecek
+plt.scatter(x1,y1,color = "black")
+plt.scatter(x2,y2,color = "black")
+plt.scatter(x3,y3,color = "black")
+plt.show()
 
 # %% KMEANS
 
@@ -68,32 +57,3 @@ plt.scatter(data.x[data.label == 1 ],data.y[data.label == 1],color = "green")
 plt.scatter(data.x[data.label == 2 ],data.y[data.label == 2],color = "blue")
 plt.scatter(kmeans2.cluster_centers_[:,0],kmeans2.cluster_centers_[:,1],color = "yellow")
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jul 14 13:13:34 2018
-
-@author: kcy
-"""
 import pandas as pd
 
 # %% import twitter data
@@ -85,29 +79,3 @@ nb.fit(x_train,y_train)
 y_pred = nb.predict(x_test)
 
 print("accuracy: ",nb.score(y_pred.reshape(-1,1),y_test))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

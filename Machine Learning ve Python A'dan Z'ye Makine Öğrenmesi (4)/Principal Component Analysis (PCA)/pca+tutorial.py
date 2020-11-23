@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jul 14 21:04:59 2018
-
-@author: user
-"""
-
 from sklearn.datasets import load_iris
 import pandas as pd
 
@@ -46,27 +39,3 @@ plt.legend()
 plt.xlabel("p1")
 plt.ylabel("p2")
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jul 13 23:20:38 2018
-
-@author: user
-"""
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -41,38 +34,11 @@ x = (x_data - np.min(x_data))/(np.max(x_data)-np.min(x_data))
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size = 0.3,random_state=1)
  # %% SVM
+
+from sklearn.svm import SVC
  
- from sklearn.svm import SVC
+svm = SVC(random_state = 1)
+svm.fit(x_train,y_train)
  
- svm = SVC(random_state = 1)
- svm.fit(x_train,y_train)
- 
- # %% test
- print("print accuracy of svm algo: ",svm.score(x_test,y_test))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# %% test
+print("print accuracy of svm algo: ",svm.score(x_test,y_test))

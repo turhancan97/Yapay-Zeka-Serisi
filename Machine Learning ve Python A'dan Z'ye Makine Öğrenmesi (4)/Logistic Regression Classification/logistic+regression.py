@@ -1,11 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jul 12 21:06:37 2018
-
-@author: user
-"""
-
-# %% libraries
+# libraries
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -134,74 +127,3 @@ from sklearn.linear_model import LogisticRegression
 lr = LogisticRegression()
 lr.fit(x_train.T,y_train.T)
 print("test accuracy {}".format(lr.score(x_test.T,y_test.T)))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

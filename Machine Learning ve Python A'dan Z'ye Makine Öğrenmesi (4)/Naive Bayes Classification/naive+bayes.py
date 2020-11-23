@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jul 22 17:57:21 2018
-
-@author: user
-"""
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -39,26 +33,10 @@ x = (x_data - np.min(x_data))/(np.max(x_data)-np.min(x_data))
 # train test split
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size = 0.3,random_state=1)
- # %% Naive bayes 
- from sklearn.naive_bayes import GaussianNB
- nb = GaussianNB()
- nb.fit(x_train,y_train)
+# %% Naive bayes 
+from sklearn.naive_bayes import GaussianNB
+nb = GaussianNB()
+nb.fit(x_train,y_train)
  
- # %% test
- print("print accuracy of naive bayes algo: ",nb.score(x_test,y_test))
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+# %% test
+print("print accuracy of naive bayes algo: ",nb.score(x_test,y_test))

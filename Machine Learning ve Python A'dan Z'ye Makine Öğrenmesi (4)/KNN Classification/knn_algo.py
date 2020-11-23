@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jul 13 22:45:40 2018
-
-@author: user
-"""
-
 # KNN Algoritması Tutorial
 #* import dataset
 #* datasetimi tanımı
@@ -20,7 +13,7 @@ data = pd.read_csv("data.csv")
 
 # %%
 data.drop(["id","Unnamed: 32"],axis=1,inplace=True)
-data.tail()
+print(data.tail())
 # malignant = M  kotu huylu tumor
 # benign = B     iyi huylu tumor
 
@@ -68,5 +61,3 @@ plt.plot(range(1,15),score_list)
 plt.xlabel("k values")
 plt.ylabel("accuracy")
 plt.show()
-
-

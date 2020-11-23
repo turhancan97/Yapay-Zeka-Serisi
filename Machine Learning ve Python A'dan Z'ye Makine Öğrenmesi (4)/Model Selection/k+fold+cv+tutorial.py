@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jul 14 23:53:33 2018
-
-@author: user
-"""
-
 from sklearn.datasets import load_iris
 import pandas as pd
 import numpy as np
@@ -66,44 +59,3 @@ logreg_cv.fit(x,y)
 
 print("tuned hyperparameters: (best parameters): ",logreg_cv.best_params_)
 print("accuracy: ",logreg_cv.best_score_)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
