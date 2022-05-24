@@ -3,7 +3,7 @@ import numpy as np
 import random
 import matplotlib.pyplot as plt 
 
-env = gym.make("Taxi-v2").env
+env = gym.make("Taxi-v3").env
 
 # Q table
 q_table = np.zeros([env.observation_space.n,env.action_space.n])
@@ -100,62 +100,3 @@ env.render()
   
 env.s = env.encode(4,4,4,3) 
 env.render()         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        

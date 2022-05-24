@@ -3,7 +3,7 @@ import numpy as np
 from collections import deque
 from keras.models import Sequential
 from keras.layers import Dense
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 import random
 
 class DQLAgent:
@@ -69,7 +69,7 @@ if __name__ == "__main__":
     agent = DQLAgent(env)
     
     batch_size = 16
-    episodes = 100
+    episodes = 3
     for e in range(episodes):
         
         # initialize environment
@@ -104,7 +104,6 @@ if __name__ == "__main__":
             if done:
                 print("Episode: {}, time: {}".format(e,time))
                 break
-
 # %% test
 import time
 trained_model = agent
@@ -119,56 +118,7 @@ while True:
     state = next_state
     time_t += 1
     print(time_t)
-    #time.sleep(0.4)
+    time.sleep(0.4)
     if done:
         break
 print("Done")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-            
