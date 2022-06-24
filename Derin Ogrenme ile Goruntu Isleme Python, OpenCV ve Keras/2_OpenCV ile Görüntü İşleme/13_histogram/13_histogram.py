@@ -32,7 +32,7 @@ plt.figure(), plt.imshow(mask, cmap = "gray")
 mask[1500:2000, 1000:2000] = 255
 plt.figure(), plt.imshow(mask, cmap = "gray") 
 
-masked_img_vis = cv2.bitwise_and(golden_gate_vis, golden_gate_vis, mask = mask)
+masked_img_vis = cv2.bitwise_and(golden_gate_vis, mask, mask = mask)
 plt.figure(), plt.imshow(masked_img_vis, cmap = "gray") 
 
 masked_img = cv2.bitwise_and(golden_gate, golden_gate, mask = mask)

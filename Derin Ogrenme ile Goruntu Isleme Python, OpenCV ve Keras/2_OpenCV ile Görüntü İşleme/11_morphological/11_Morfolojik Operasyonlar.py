@@ -38,7 +38,7 @@ plt.figure(), plt.imshow(black_noise_img, cmap = "gray"), plt.axis("off"), plt.t
 
 # kapatma
 closing = cv2.morphologyEx(black_noise_img.astype(np.float32), cv2.MORPH_CLOSE, kernel)
-plt.figure(), plt.imshow(opening, cmap = "gray"), plt.axis("off"), plt.title("Kapama")
+plt.figure(), plt.imshow(closing, cmap = "gray"), plt.axis("off"), plt.title("Kapama")
 
 # gradient
 gradient = cv2.morphologyEx(img, cv2.MORPH_GRADIENT, kernel)

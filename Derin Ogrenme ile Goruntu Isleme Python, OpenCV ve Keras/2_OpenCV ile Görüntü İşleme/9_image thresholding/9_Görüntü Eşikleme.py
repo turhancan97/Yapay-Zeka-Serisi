@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 # resmi içe aktar
-img = cv2.imread("img1.jpg")
+img = cv2.imread("pisa.png")
 img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 plt.figure()
 plt.imshow(img, cmap = "gray")
